@@ -8,70 +8,70 @@ import java.util.Arrays;
 public class Main {
     public static void main(String args[]) {
 
-        int[] arr = {1, 38, 27, 43, 3, 9, 82, 10, 5, 67, 34};
-        System.out.println(Arrays.toString(arr));
-        mergeSort(arr);
-        System.out.println(Arrays.toString(arr));
+        int[] array = {1, 38, 27, 43, 3, 9, 82, 10, 5, 67, 34};
+        System.out.println(Arrays.toString(array));
+        mergeSort(array);
+        System.out.println(Arrays.toString(array));
     }
-    private static void mergeSort(int[] arr) {
-        int lengthArr = arr.length;
-        if(lengthArr == 1) {
+    private static void mergeSort(int[] array) {
+        int arrayLength = array.length;
+        if(arrayLength == 1) {
             return;
         }
-        int mid = (lengthArr % 2 != 0) ? lengthArr/2 + 1 : lengthArr/2;
-        int[] leftArr = new int[mid];
-        int[] rightArr = new int[lengthArr - mid];
+        int middle = (arrayLength % 2 != 0) ? arrayLength/2 + 1 : arrayLength/2;
+        int[] leftArray = new int[middle];
+        int[] rightArray = new int[arrayLength - middle];
 
-        for (int i = 0; i < mid; i++) {
-            leftArr[i] = arr[i];
+        for (int i = 0; i < middle; i++) {
+            leftArray[i] = array[i];
         }
 
-        for (int j = 0; j < lengthArr - mid; j++) {
-            rightArr[j] = arr[j + mid];
+        for (int j = 0; j < arrayLength - middle; j++) {
+            rightArray[j] = array[j + middle];
         }
 
-        mergeSort(leftArr);
-        mergeSort(rightArr);
+        mergeSort(leftArray);
+        mergeSort(rightArray);
 
-        merge(arr, leftArr, rightArr);
+        merge(array, leftArray, rightArray);
     }
 
-    private static void merge(int[] arr, int[] leftArr, int[] rightArr) {
-        int leftArrLength = leftArr.length;
-        int rightArrLength = rightArr.length;
+    private static void merge(int[] array, int[] leftArray, int[] rightArray) {
+        int leftArrayLength = leftArray.length;
+        int rightArrayLength = rightArray.length;
 
 
         int leftIndex = 0;
         int rightIndex = 0;
 
 
-        int arrIndex = 0;
+        int arrayIndex = 0;
 
-        while (leftIndex < leftArrLength && rightIndex < rightArrLength) {
-            if (leftArr[leftIndex] > rightArr[rightIndex]) {
-                arr[arrIndex] = leftArr[leftIndex];
+        while (leftIndex < leftArrayLength && rightIndex < rightArrayLength) {
+            if (leftArray[leftIndex] > rightArray[rightIndex]) {
+                array[arrayIndex] = leftArray[leftIndex];
 
                 leftIndex++;
-                arrIndex++;
+                arrayIndex++;
             } else {
-                arr[arrIndex] = rightArr[rightIndex];
+                array[arrayIndex] = rightArray[rightIndex];
                 rightIndex++;
-                arrIndex++;
+                arrayIndex++;
             }
         }
 
 
-        while (leftIndex < leftArrLength) {
-            arr[arrIndex] = leftArr[leftIndex];
+        while (leftIndex < leftArrayLength) {
+            array[arrayIndex] = leftArray[leftIndex];
             leftIndex++;
-            arrIndex++;
+            arrayIndex++;
         }
 
 
-        while (rightIndex < rightArrLength) {
-            arr[arrIndex] = rightArr[rightIndex];
+        while (rightIndex < rightArrayLength) {
+            array[arrayIndex] = rightArray[rightIndex];
             rightIndex++;
-            arrIndex++;
+            arrayIndex++;
         }
     }
 }
