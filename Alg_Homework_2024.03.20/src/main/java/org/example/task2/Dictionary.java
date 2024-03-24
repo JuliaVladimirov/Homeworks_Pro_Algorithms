@@ -37,6 +37,7 @@ public class Dictionary {
         }
     }
 
+//  HashMap
     public static Map<Character, Long> letterDictionary(String text) {
         Map<Character, Long> dictionary = Arrays.stream(text.split("\\W+"))
                 .map(String::toLowerCase)
@@ -46,6 +47,7 @@ public class Dictionary {
         return dictionary;
     }
 
+//  Array
     public static int[] letterDictionary1(String text) {
         text = text.toLowerCase();
         int[] letters = new int[26];
