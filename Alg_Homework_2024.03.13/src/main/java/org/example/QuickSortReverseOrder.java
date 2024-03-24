@@ -41,8 +41,5 @@ public class QuickSortReverseOrder {
         array[source] = array[destination];
         array[destination] = temp;
     }
-
-
-
 }
 
