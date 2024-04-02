@@ -6,12 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="HomeWork_2024.02.07" />
-        <module name="Alg_Homework_2024.02.22" />
+        <module name="Alg_HW" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="Lesson4" target="21" />
-    </bytecodeTargetLevel>
   </component>
 </project>

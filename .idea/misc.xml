@@ -1,11 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/Alg_Lesson4/pom.xml" />
-        <option value="$PROJECT_DIR$/Alg_HomeWork_2024.02.07/HomeWork_2024.02.07_TaskFromPresentation/pom.xml" />
-        <option value="$PROJECT_DIR$/Alg_Homework_2024.02.22/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
