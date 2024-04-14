@@ -1,4 +1,4 @@
-package org.example.alg_homework_2024_03_25.Task2;
+package org.example.alg_homework_2024_03_25.task2;
 
 //  2*) Реализовать структуру данных SpecialQueue, которая поддерживает все операции с очередью,
 //  … и дополнительную операцию getMax(),

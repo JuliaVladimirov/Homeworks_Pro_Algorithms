@@ -1,4 +1,4 @@
-package org.example.alg_homework_2024_03_25.Task1;
+package org.example.alg_homework_2024_03_25.task1;
 
 //  1) Задача getMin().
 //  Реализовать структуру данных SpecialStack, которая поддерживает все операции со стеком,

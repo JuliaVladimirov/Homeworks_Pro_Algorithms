@@ -9,5 +9,9 @@
         <module name="Alg_HW" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Alg_Homework_2024.02.22" target="21" />
+      <module name="HomeWork_2024.02.07" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>
