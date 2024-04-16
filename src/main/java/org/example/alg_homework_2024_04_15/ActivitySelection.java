@@ -25,7 +25,7 @@ public class ActivitySelection {
                 res.add(list.get(i));
             }
         }
-
+        res.sort(Comparator.comparingInt(Activity::getFinish));
         print(res);
     }
 
