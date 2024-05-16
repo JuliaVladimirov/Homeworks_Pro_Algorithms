@@ -1,4 +1,4 @@
-package org.example.alg_homework_2024_04_29.task1;
+package org.example.alg_homework_2024_04_29;
 
 public class Node {
     private int value;
