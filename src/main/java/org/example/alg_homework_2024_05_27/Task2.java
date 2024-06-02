@@ -20,6 +20,7 @@ public class Task2 {
         int secondElement = array2[j];
         int minModul = Math.abs(firstElement - secondElement);
         boolean flag = true;
+        i =  1;
 
         while (i < lengthN && j < lengthM) {
 
@@ -31,9 +32,9 @@ public class Task2 {
             }
 
             if (flag){
-                i++;
-            } else if (!flag){
                 j--;
+            } else if (!flag){
+                i++;
             }
             flag = !flag;
         }
