@@ -13,13 +13,12 @@ public class Task2 {
         int lengthN = array1.length;
         int lengthM = array2.length;
 
-        int firstElement = array1[0];
-        int secondElement = array2[0];
-        int minModul = Math.abs(array1[0] - array2[0]);
-
         int i = 0; // first pointer - the beginning of  array1
         int j = lengthM - 1; // second pointer - the end of array2
 
+        int firstElement = array1[i];
+        int secondElement = array2[j];
+        int minModul = Math.abs(firstElement - secondElement);
         boolean flag = true;
 
         while (i < lengthN && j < lengthM) {
