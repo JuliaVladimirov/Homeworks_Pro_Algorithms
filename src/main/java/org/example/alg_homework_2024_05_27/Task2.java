@@ -22,7 +22,7 @@ public class Task2 {
         boolean flag = true;
         i =  1;
 
-        while (i < lengthN && j < 0) {
+        while (i < lengthN && j >= 0) {
 
             int tempModul = Math.abs(array1[i] - array2[j]);
             if (minModul > tempModul) {
