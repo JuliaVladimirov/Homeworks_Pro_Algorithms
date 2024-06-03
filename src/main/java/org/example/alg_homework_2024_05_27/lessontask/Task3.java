@@ -1,5 +1,6 @@
-package org.example.alg_homework_2024_05_27;
+package org.example.alg_homework_2024_05_27.lessontask;
 
+//Задача с урока
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -56,8 +57,8 @@ public class Task3 {
 
     public static void main(String[] args) {
         int[] array1 = {1, 29, 10, 2};
-        int[] array2 = {8, 30, 20};
-        int[] array3 = {4, 20, 35};
+        int[] array2 = {8, 31, 25};
+        int[] array3 = {4, 19, 35};
 
 
         findPairSumTwoPoint(array1, array2, array3);
