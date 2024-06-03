@@ -7,7 +7,7 @@ import java.util.Collections;
 
 public class Task3 {
 
-    public static void findPairSumTwoPoint(int[] array1, int[] array2, int[] array3) {
+    public static void findMinModulThreePoint(int[] array1, int[] array2, int[] array3) {
         int length1 = array1.length;
         int length2 = array2.length;
         int length3 = array3.length;
@@ -61,7 +61,7 @@ public class Task3 {
         int[] array3 = {4, 19, 35};
 
 
-        findPairSumTwoPoint(array1, array2, array3);
+        findMinModulThreePoint(array1, array2, array3);
 
     }
 
