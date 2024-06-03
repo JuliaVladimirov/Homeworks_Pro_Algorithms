@@ -9,7 +9,7 @@ package org.example.alg_homework_2024_05_27;
 
 public class Task2 {
 
-    public static void findPairSumTwoPoint(int[] array1, int[] array2) {
+    public static void findMinModulTwoPoint(int[] array1, int[] array2) {
         int lengthN = array1.length;
         int lengthM = array2.length;
 
@@ -47,7 +47,7 @@ public class Task2 {
         int[] array1 = {1, 2, 10};
         int[] array2 = {8, 20, 30};
 
-        findPairSumTwoPoint(array1, array2);
+        findMinModulTwoPoint(array1, array2);
     }
 
 }
